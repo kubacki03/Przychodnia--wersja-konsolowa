@@ -32,6 +32,9 @@ public class Menu {
     @Autowired
     private ZakładanieKontaPacjenta zakładanieKontaPacjenta;
 
+    @Autowired
+    private PrzypomnijHaslo przypomnijHaslo;
+
 
     public void wyswietlMenu(){
         Scanner scanner = new Scanner(System.in);
@@ -107,6 +110,10 @@ public class Menu {
             }
         } else {
             System.out.println("Błędny login lub hasło.");
+            System.out.println("Przypomnij haslo t/n");
+            if(scanner.nextLine().equals("t")){
+                przypomnijHaslo.przypomnij(login);
+            }
         }
     }
 }

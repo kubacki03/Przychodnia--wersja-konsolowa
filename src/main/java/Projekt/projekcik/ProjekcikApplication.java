@@ -6,6 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @SpringBootApplication
 public class ProjekcikApplication implements CommandLineRunner {
@@ -41,5 +42,6 @@ public class ProjekcikApplication implements CommandLineRunner {
 	@Override
 	public void run(String[] args){
 		menu.wyswietlMenu();
+
 	}
 }
