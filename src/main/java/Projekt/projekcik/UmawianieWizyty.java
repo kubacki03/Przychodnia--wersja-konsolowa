@@ -105,6 +105,13 @@ public class UmawianieWizyty {
         }
     }
 
+    public void wypiszOpcjeSortowania(){
+        System.out.println("i) Rosnąco po cenie");
+        System.out.println("o) Malejąco po cenie");
+        System.out.println("p) Alfabetycznie");
+
+    }
+
 
     public void wypiszLekarzy(String specjalizacja,String idPacjenta){
 
